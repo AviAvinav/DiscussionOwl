@@ -1,0 +1,229 @@
+main {
+  text-align: center;
+  vertical-align: center;
+  line-height: 100vh
+}
+.header{
+  background-color: #fff !important;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 5;
+  height: 54px;
+  overflow: hidden;
+}
+.content{
+  background: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 15px;
+}
+.body-wrapper > *{
+  background: #e9e9e9;
+}
+a {
+  text-decoration: none !important;
+  color: white;
+}
+textarea{
+  outline: none;
+}
+.profile-hover{
+  border: 1px solid #fff;
+  padding: 4px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-right: 8px;
+}
+.profile-hover:hover{
+  border-color: #ccc;
+}
+.sign-out-btn-wrapper{
+  display: flex;
+  flex-direction: row;
+  transition: 0.4s ease-in-out;
+  transform: translateX(90px);
+}
+button{
+  white-space: nowrap;
+}
+
+/* forum styling */
+
+.forum-card{
+  background-color: #fff !important;
+  max-width: 720px;
+  min-width: 720px;
+  padding: 25px;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.125);
+  display: flex;
+  flex-direction: column;
+  word-break: break-all;
+  margin-top: 15px;
+  margin-bottom: 30px;
+}
+.forum-card p{
+  margin: 0;
+}
+.forum-card hr{
+  margin: 8px;
+  margin-left: 0;
+  margin-right: 0;
+  border: none;
+  background: rgba(0, 0, 0, 0.25);
+  height: 1px;
+}
+.forum-card h3{
+  margin-top: 0;
+}
+.forum-user-wrapper{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: fit-content;
+  align-items: center;
+  background: white;
+  border: none;
+}
+.forum-user-wrapper > *{
+  user-select: none;
+  -webkit-user-select: none;
+}
+.forum-user-wrapper h5{
+  margin: 0;
+}
+.forum-user-pfp{
+  height: 32px;
+  min-height: 32px;
+  width: 32px;
+  min-width: 32px;
+  border: none;
+  border-radius: 100px;
+  overflow: hidden;
+  margin-right: 8px;
+  user-select: none;
+}
+.forum-user-pfp img{
+  height: 32px;
+  width: auto;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+.comment-input{
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+}
+.comment-submits{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.forumPostBtn button{
+  width: 100% !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+}
+.forum-card textarea{
+  min-height: 2.5rem;
+}
+.loaded-img-wrapper{
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  margin-top: 10px;
+  width: 120px !important;
+}
+.loaded-img-wrapper img{
+  width: 100%;
+  height: auto;
+}
+.file-input{
+  margin-top: 10px;
+}
+.forum-post-data{
+  display: flex;
+  margin-bottom: 6px;
+  justify-content: space-between;
+}
+.forum-controls{
+  min-width: 720px;
+  max-width: 720px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.forum-controls input{
+  width: 100% !important;
+  margin-right: 10px;
+}
+.forum-controls > *{
+  font-size: 18px;
+}
+.forum-controls button img{
+  transform: translate(4px, -2px);
+}
+.verticle-hr{
+  height: calc(18px * 2);
+  width: 1px;
+  background: rgba(0, 0, 0, 0.4);
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.comment-text{
+  max-width: 100%;
+  word-break: break-all;
+}
+.likebtn{
+  border: none;
+  background: none;
+  outline: none !important;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+/* end of forum styling */
+
+/* start of flashcards styling */
+
+.flashcards-wrapper{
+  max-width: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.flashcard{
+  height: 164px;
+  min-width: 164px;
+  background: rgba(255, 255, 255, 1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 20px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.125);
+  padding: 20px;
+  user-select: none;
+  cursor: pointer;
+  transition: ease-in-out 1s;
+}
+.flashcard > *{
+  margin: 5px;
+}
+.add-flashcard{
+  transition: 0.2s;
+  cursor: pointer;
+}
+.add-flashcard:hover{
+  background: rgba(0, 0, 0, 0.05);
+}
+
+/* end of flashcards styling
